@@ -40,7 +40,7 @@ app.get('/', (req, res)=>{
   res.render('home.hbs', {
       pageTitle:'Home Page',
       currentYear: new Date().getFullYear(),
-      welcomeMessage:'Welcom to node hell'
+      welcomeMessage:'Welcome to node hell'
     });
 });
 
