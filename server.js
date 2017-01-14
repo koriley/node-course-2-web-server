@@ -47,7 +47,15 @@ app.get('/', (req, res)=>{
 app.get('/about', (req, res) =>{
   res.render('about.hbs', {
     pageTitle:'About Page',
+    welcomeMessage: "this is the about page, but you still will know shit about me",
     currentYear: new Date().getFullYear()
+  });
+});
+
+app.get("/projects", (req, res)=>{
+  res.render('projects.hbs',{
+    pageTitle:'Projects Page',
+    welcomeMessage: "this will hold awesome shit I am working on"
   });
 });
 
